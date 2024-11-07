@@ -1,12 +1,12 @@
 data:
-  table: "raw_data"
-  data_path: "data/game.csv"
-  features_columns:
+  table: "raw_data"          #name of the dataset 
+  data_path: "data/game.csv" #specify location
+  features_columns:          #list of specific columns to be used
     - "season_id"
 
 model:
-  name: "model_1"
-  type: "classification"
-  params:
+  name: "model_1"           #name of the model configuration
+  type: "classification"    #spefify the type of model 
+  params:                   #parameters for the model
     max_iter: 100
     random_state: 42
